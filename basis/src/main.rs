@@ -2,9 +2,48 @@ fn log(num: i32, str: char) {
     println!("num is :{}, str is :{}", num, str);
 }
 
+fn five() -> i32 {
+    5
+}
+
+fn plus_one(x: i32) -> i32 {
+    /*
+    不用加分号 x + 1;
+    */
+    x + 1
+}
+
 fn main() {
+    // 控制流
+    // 代码中的条件，必须是bool
+    let num = 3;
+
+    if num < 5 {
+        println!("true");
+    } else {
+        println!("false");
+    }
+
+    let condition = true;
+    let val = if condition { 5 } else { 6 };
+
+    println!("val :{}", val);
+
+    // let result = plus_one(5);
+    // println!("result: {}", retult);
+
+    // let x = five();
+    // println!("x: {}", x);
+
+    // let x = 5;
+    //
+    // let y = {
+    //     let x = 3;
+    //     x + 1;
+    // };
+
     //函数
-    log(452, '😻');
+    // log(452, '😻');
 
     /*
     复合类型
