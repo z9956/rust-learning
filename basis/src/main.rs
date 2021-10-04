@@ -15,26 +15,59 @@ fn plus_one(x: i32) -> i32 {
 
 fn main() {
     //loop 循环
-    let mut count = 0;
+    //for
+    // let list = [10, 20, 40, 50];
+    //
+    // for ele in list.iter() {
+    //     println!("the value is: {}", ele);
+    // }
 
-    'counting_up: loop {
-        println!("count = {}", count);
-        let mut remaining = 10;
+    //Range
+    /*for number in (1..4).rev() {
+        println!("{}!", number);
+    }*/
 
-        loop {
-            println!("remaining = {}", remaining);
-            if remaining == 9 {
-                break;
-            }
-            if count == 2 {
-                break 'counting_up;
-            }
-            remaining -= 1;
-        }
+    //while 条件循环
+    // let mut num = 3;
+    //
+    // while num != 0 {
+    //     println!("{}", num);
+    //
+    //     num = num - 1;
+    // }
 
-        count += 1;
-    }
-    println!("End count = {}", count);
+    //从循环返回
+    // let mut counter = 0;
+    // let result = loop {
+    //     counter += 1;
+    //
+    //     if counter == 10 {
+    //         break counter * 2;
+    //     }
+    // };
+    // println!("the result is {}", result);
+
+    //嵌套循环
+    // let mut count = 0;
+    //
+    // 'counting_up: loop {
+    //     println!("count = {}", count);
+    //     let mut remaining = 10;
+    //
+    //     loop {
+    //         println!("remaining = {}", remaining);
+    //         if remaining == 9 {
+    //             break;
+    //         }
+    //         if count == 2 {
+    //             break 'counting_up;
+    //         }
+    //         remaining -= 1;
+    //     }
+    //
+    //     count += 1;
+    // }
+    // println!("End count = {}", count);
 
     // 控制流
     // 代码中的条件，必须是bool
