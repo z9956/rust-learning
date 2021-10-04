@@ -14,20 +14,42 @@ fn plus_one(x: i32) -> i32 {
 }
 
 fn main() {
+    //loop 循环
+    let mut count = 0;
+
+    'counting_up: loop {
+        println!("count = {}", count);
+        let mut remaining = 10;
+
+        loop {
+            println!("remaining = {}", remaining);
+            if remaining == 9 {
+                break;
+            }
+            if count == 2 {
+                break 'counting_up;
+            }
+            remaining -= 1;
+        }
+
+        count += 1;
+    }
+    println!("End count = {}", count);
+
     // 控制流
     // 代码中的条件，必须是bool
-    let num = 3;
-
-    if num < 5 {
-        println!("true");
-    } else {
-        println!("false");
-    }
-
-    let condition = true;
-    let val = if condition { 5 } else { 6 };
-
-    println!("val :{}", val);
+    // let num = 3;
+    //
+    // if num < 5 {
+    //     println!("true");
+    // } else {
+    //     println!("false");
+    // }
+    //
+    // let condition = true;
+    // let val = if condition { 5 } else { 6 };
+    //
+    // println!("val :{}", val);
 
     // let result = plus_one(5);
     // println!("result: {}", retult);
