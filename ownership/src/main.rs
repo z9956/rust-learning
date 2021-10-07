@@ -17,10 +17,10 @@ fn main() {
     /* 在任意给定时间，要么 只能有一个可变引用，要么 只能有多个不可变引用。
     引用必须总是有效的。*/
 
-    let mut str = String::from("hello");
-    str.push_str(", world");
-
-    println!("{}", str);
+    // let mut str = String::from("hello");
+    // str.push_str(", world");
+    //
+    // println!("{}", str);
 
     //内存与分配
 
@@ -43,4 +43,6 @@ fn main() {
     //悬垂引用（Dangling References）
     // let result = no_dangle();
     // println!("result: {}", result);
+
+    //Slice 类型
 }
